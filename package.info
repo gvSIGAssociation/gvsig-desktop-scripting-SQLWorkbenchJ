@@ -1,0 +1,22 @@
+#
+#Wed Dec 15 19:21:43 CET 2021
+owner=
+code=SQLWorkbenchJ
+download-url=https\://github.com/gvSIGAssociation/gvsig-desktop-scripting-SQLWorkbenchJ/releases/download/1.0.0-0/gvSIG-desktop-2.6.0-SQLWorkbenchJ-1.0.0-0-testing-all-all-j1_8.gvspkg
+java-version=j1_8
+operating-system=all
+description=
+official=true
+type=Script
+web-url=
+version=1.0.0-0
+buildNumber=0
+owner-url=
+dependencies=
+sources-url=
+name=SQLWorkbenchJ
+gvSIG-version=2.6.0
+state=testing
+categories=
+model-version=1.0.1
+architecture=all
