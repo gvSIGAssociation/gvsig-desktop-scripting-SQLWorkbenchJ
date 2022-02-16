@@ -1,22 +1,22 @@
 #
-#Wed Feb 16 18:43:04 CET 2022
+#Wed Feb 16 18:49:04 CET 2022
 owner=gvSIG association
 code=SQLWorkbenchJ
 java-version=j1_8
 official=true
 type=Script
-version=1.0.0-2
+version=1.0.0-3
 state=testing
-application-version=2.6.0-0
 operating-system=all
 dependencies=
 sources-url=https\://github.com/gvSIGAssociation/gvsig-desktop-scripting-SQLWorkbenchJ
 web-url=
 architecture=all
-code-alias=
 model-version=1.0.1
 categories=
 description=This tool integrates SQL Workbench/J in the gvSIG desktop tools.\nSQL Workbench/J is a free, DBMS-independent, cross-platform SQL query tool. \nIts main focus is on running SQL scripts (either interactively or as a batch) and export/import features. 
 owner-url=http\://www.gvsig.com
+buildNumber=3
 download-url=
+gvSIG-version=2.6.0
 name=SQLWorkbenchJ
