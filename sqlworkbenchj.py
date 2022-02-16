@@ -92,6 +92,7 @@ def launch0(url, name, provider, user, password):
   s = s.replace("${DATABASE_URL}", url)
   s = s.replace("${DATABASE_USER}", user)
   s = s.replace("${DATABASE_PASSWORD}", password)
+  s = s.encode("UTF-8")
   f.close()
   target = open(configdir+"/wb-profiles.properties", "w")
   target.write(s)
@@ -116,4 +117,3 @@ def main(*args):
   #launch()
 
   SQLWorkbenchJ().showForm()
-    
