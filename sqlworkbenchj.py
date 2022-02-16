@@ -43,6 +43,13 @@ class SQLWorkbenchJ(FormPanel):
             provider = conn.getProviderName()
             user = conn.getUser()
             password = conn.getPassword()
+            # jdbc:h2:tcp://127.0.1.1:9123//home/jjdelcerro/datos/devel/org.gvsig.desktop/org.gvsig.desktop.plugin/org.gvsig.h2spatial/org.gvsig.h2spatial.h2gis132/org.gvsig.h2spatial.h2gis132.provider/target/test-dbs/test_ars1-1642756338518-001;MODE=PostgreSQL;SCHEMA=PUBLIC;ALLOW_LITERALS=ALL
+            # jdbc:h2:file:/home/jjdelcerro/dbs/srv1;MODE=PostgreSQL;SCHEMA=PUBLIC;ALLOW_LITERALS=ALL
+            if self.chkShareConnection.isSelected():
+              if url.startswith("jdbc:h2:file:"):
+                url = url.replace("jdbc:h2:file:","jdbc:h2:tcp://127.0.0.1:9123/")
+              elif url.startswith("jdbc:h2:split:"):
+                url = url.replace("jdbc:h2:split:","jdbc:h2:tcp://127.0.0.1:9123/split:")
             launch(url, name, provider, user, password)
             
     def showForm(self):
@@ -109,3 +116,4 @@ def main(*args):
   #launch()
 
   SQLWorkbenchJ().showForm()
+    
