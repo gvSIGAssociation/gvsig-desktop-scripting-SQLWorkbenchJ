@@ -24,7 +24,7 @@ class SQLWorkbenchJExtension(ScriptingExtension):
     return True
 
   def isVisible(self,action):
-    return gvsig.currentView()!=None
+    return True
     
   def execute(self,actionCommand, *args):
     actionCommand = actionCommand.lower()
