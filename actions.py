@@ -60,7 +60,7 @@ def selfRegister():
     u"SQLWorkbenchJ" # Tooltip
   )
   action = actionManager.registerAction(action)
-  application.addMenu(action, u"tools/SQLWorkbenchJ")
+  application.addMenu(action, u"tools/Database/SQLWorkbenchJ")
       
 def main(*args):
    selfRegister()
